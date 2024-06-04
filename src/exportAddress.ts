@@ -23,6 +23,7 @@ export async function exportFromDune(): Promise<void> {
 
   const data = resultRes.result.rows
     .map((row) => {
+      // Need to change correct field name in your query
       return `${row.address}`;
     })
     .join('\n');
