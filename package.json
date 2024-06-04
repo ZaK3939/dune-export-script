@@ -1,0 +1,18 @@
+{
+  "name": "dune-export-script",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "@cowprotocol/ts-dune-client": "^0.0.2",
+    "dotenv": "^16.4.5"
+  }
+}
